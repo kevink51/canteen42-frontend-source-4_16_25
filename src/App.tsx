@@ -9,7 +9,7 @@ import Register from './pages/Register'
 const API_URL = import.meta.env.VITE_BACKEND_API_URL as string || 'https://canteen42-backend-rebuild.onrender.com'
 
 function App() {
- // const [isLoggedIn, setIsLoggedIn] = useState(false)
+ const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     const token = localStorage.getItem('token')
